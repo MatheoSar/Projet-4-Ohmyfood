@@ -1,0 +1,313 @@
+.img-resto img {
+    width: 375px;
+    height: 275px;
+   
+}
+
+.souligne {
+    display: flex;
+    margin-left: 13px;
+    width: 40px;
+    border-bottom: 4px solid #99e2d0;
+    transform: translate(0, 5px);
+}
+
+.carte-resto {
+    background-color: #f6f6f6;
+    width: 375px;
+    border-radius: 40px 40px 0 0;
+    transform: translate(0 , -70px);
+}
+
+.carte-resto-container h1 {
+    font-family: 'Shrikhand', sans-serif;
+    font-style: italic;
+    margin-left: 17px;
+    padding-top: 30px;
+}
+
+.animation-coeur {
+    display: flex;
+    padding-left: 330px;
+    transform: translate(0, -25px);
+}
+
+.animation-coeur i {
+    position: absolute;
+    cursor: pointer;
+}
+
+.coeur-plein {
+    opacity: 0;
+}
+
+.coeur-plein:active {
+    opacity: 1;
+    color: transparent; 
+    background-clip: text;
+    -webkit-background-clip: text; 
+    background-image: linear-gradient(0deg, #9356DC, #FF79DA); 
+} 
+
+.entrées {
+    margin-top: 40px;
+}
+
+.entrées h3 {
+    margin-left: 13px;
+}
+
+.ent {
+    display: flex;
+    width: 349px;
+    height: 69px;
+    background-color: #ffffff;
+    margin-top: 15px;
+    margin-left: 13px;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.valide {
+    
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: -73px;
+    left: 280px;
+    transition: 0.8s;
+    opacity: 0;
+}
+
+.price,
+.checki {
+    position: relative;
+    height: 69px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.checki {
+    background-color: #99e2d0;
+    color: #99e2d0;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.valide:hover {
+    transform: translate(-70px,0);
+    opacity: 1;
+}
+
+.fa-check {
+    height: 20px;
+    width: 20px;
+    padding-top: 1px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.checked:hover {
+    opacity: 1;
+    margin-right: 70px; 
+}
+
+.prix {
+    display: flex;
+    margin-left: 300px;
+    transform: translate(0,-28px);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.ent h3 {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-overflow: ellipsis;
+}
+
+.ent p {
+    margin-left: 13px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+}
+
+.plats {
+    margin-top: 40px;
+}
+
+.plats h3 {
+    margin-left: 13px;
+}
+
+.plt {
+    display: flex;
+    width: 349px;
+    height: 69px;
+    background-color: #ffffff;
+    margin-top: 15px;
+    margin-left: 13px;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.plt h3 {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+
+.plt p {
+    margin-left: 13px;
+    font-size: 14px;
+} 
+
+.desserts {
+    margin-top: 40px;
+}
+
+.desserts h3 {
+    margin-left: 13px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+
+.dsrt {
+    display: flex;
+    width: 349px;
+    height: 69px;
+    background-color: #ffffff;
+    margin-top: 15px;
+    margin-left: 13px;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+.dsrt p {
+    margin-left: 13px;
+}
+
+.ent,
+.plt,
+.dsrt {
+    cursor: pointer;
+}
+
+.btn-cmd {
+    display: flex;
+    padding-top: 40px;
+    justify-content: center;
+}
+
+.btn-cmd a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 25px;
+    background: linear-gradient(0deg, #9356DC, #FF79DA);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    transition: 0.5s;
+}
+
+.btn-cmd a:hover {
+    opacity: .7;
+}
+
+/* ***** Media queries **********  min-width:768px */
+
+@media (min-width:768px) {
+    main {
+        background-color: white;
+    }
+
+    .img-resto img {
+        width: 768px;
+        object-fit: cover;
+    }
+
+    .carte-resto {
+        margin-left: 50%;
+        transform: translate(-50%,-70px);
+    }
+
+    .carte-resto {
+        width: 500px;
+        margin-bottom: -70px;
+    }
+
+    .carte-resto-container {
+        margin-left: 75.5px;
+    }
+
+    .btn-cmd {
+        padding-bottom: 50px;
+    }
+}
+
+/* ***** Media queries **********  min-width:1440px */
+
+@media (min-width:1440px) {
+
+    .img-resto img {
+        width: 1440px;
+    }
+
+    .carte-resto {
+        width: 1055px;
+    }
+
+    .ent,
+    .plt,
+    .dsrt {
+        width: 634px;
+    }
+
+    .prix {
+        margin-left: 580px;
+        margin-top: -10px;
+    }
+
+    .carte-resto-container {
+        margin-left: 200px;
+    }
+
+    .carte-resto-container h1 {
+        margin-left: 200px;
+    }
+
+    .animation-coeur {
+        margin-left: 150px;
+    }
+
+    .btn-cmd {
+        margin-left: -200px;
+    }
+
+    .prix {
+        transform: translate(0,-20px);
+    }
+
+    .valide {
+    top: -63px;
+    left: 0px;
+    }
+
+    .price,
+    .checki {
+    left: 564px; 
+}
+}

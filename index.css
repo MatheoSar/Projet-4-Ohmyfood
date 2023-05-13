@@ -1,0 +1,289 @@
+.navbar {
+    
+    background-color: #eaeaea; 
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem 1rem;
+}
+
+#logo-nav {
+    margin-right: 17px;
+}
+
+.reserv {
+    height: 270px;
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: 25px;
+    background-color: #f7f7f7;
+}
+
+.reserv h2{
+    margin-top: 50px;
+    padding-top: 30px;
+}
+
+.reserv p{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.reserv a{
+    text-decoration: none;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 25px;
+    background: linear-gradient(0deg, #9356DC, #FF79DA);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    transition: 0.5s;
+}
+
+.reserv a:hover {
+    opacity: .7;
+}
+
+.fonctionnement {
+    display: flex;
+    height: 400px;
+    margin-top: 50px;
+    
+}
+
+.fonctionnement h2 {
+    font-weight: bolder;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    
+}
+
+.fonctionnement h3{
+    padding-left: 30px;
+}
+
+.fonctionnement--container_card-1,
+.fonctionnement--container_card-2,
+.fonctionnement--container_card-3 {
+    display: flex;
+    height: 72px;
+    width: 322px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    margin-left: 30px;
+    background-color: #f7f7f7;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.fonctionnement-card-1 .nombre {
+    display: flex;
+    position: relative;
+    left: -40px;
+    height: 24px;
+    width: 24px;
+    background-color: #9356DC;
+    color: white;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nombre {
+    display: flex;
+    position: relative;
+    left: -45px;
+    height: 24px;
+    width: 24px;
+    background-color: #9356DC;
+    color: white;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.restaurants-list {
+    display: flex;
+    
+}
+
+.restaurants-list--container{
+    background-color: #f3f3f3;
+    display: flex;
+    padding: 30px 15px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+}
+
+.restaurants-list--container h2 {
+    padding-bottom: 20px;
+}
+
+.restaurants-list--container_card {
+    display: flex;
+    
+    gap: 10px;
+    justify-content: space-around;
+}
+
+#img2 {
+    width: 335px;
+}
+
+.restaurants-card-body {
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    height: 65px;
+    margin-top: 10px;
+}
+
+.restaurants-card-body h3 {
+    margin-bottom: 5px;
+}
+
+.new {
+    height: 50px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+.animation-coeur {
+    display: flex;
+    
+    transform: translate(-50px, 255px);
+}
+
+.animation-coeur i {
+    position: absolute;
+    cursor: pointer;
+}
+
+.coeur-plein {
+    opacity: 0;
+}
+
+.coeur-plein:active {
+    opacity: 1;
+    color: transparent; 
+    background-clip: text;
+    -webkit-background-clip: text; 
+    background-image: linear-gradient(0deg, #9356DC, #FF79DA); 
+} 
+
+.card-r {
+    border-radius: 16px;
+    flex-grow: 1;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+}
+
+
+.card-r img {
+    border-radius: 16px 16px 0 0;
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.etiquette {
+    background-color: #99e2d0;
+    width: 80px;
+    height: 29px;
+    border-radius: 2px;
+    text-align: center;
+    position: relative;
+    bottom: 220px;
+    left: 250px;
+}
+
+.etiquette p {
+    color: #008766;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+/* ***** Media queries **********  min-width:768px */
+
+@media (min-width:768px) {
+    .fonctionnement {
+        padding-top: 200px;
+        margin-left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .restaurants-list--container_card {
+        margin-left: 50%;
+        transform: translate(-50%,0);
+    }
+
+    .restaurants-list--container h2 {
+        margin-left: 50%;
+        transform: translate(-50%,0);
+    }
+}
+
+/* ***** Media queries **********  min-width:1440px */
+
+@media (min-width:1440px) {
+    .reserv br {
+        display: none;
+    }
+
+    #img2 {
+        width: 490px;
+    }
+
+    .fonctionnement {
+        background-color: #ffffff;
+        width: 100%;
+        height: 250px;
+    }
+
+    .fonctionnement--container {
+        display: flex;
+        transform: translate(-10px, -100px);
+
+    }
+
+    .fonctionnement--container h2 {
+        transform: translate(200px, -50px);
+    }
+    
+    .restaurants-list--container_card img {
+        width: 490px;
+        height: 250px;
+    }
+
+    .restaurants-list--container_card{
+       margin: 0; 
+       transform: translate(0,0);
+    }
+
+    .restaurants-list--container {
+        padding-left: 130px;
+        margin-top: -100px;
+    }
+
+    .card-r{
+        width: 490px;
+        margin-left: 70px;
+        margin-bottom: 50px;
+    }
+
+    .restaurants-list--container h2 {
+        transform: translate(-570px,-20px);
+    }
+
+    .animation-coeur {
+        padding: 0;
+        transform: translate(-50px,280px);
+    }
+
+    .etiquette {
+        transform: translate(140px,-20px);
+    }
+}
